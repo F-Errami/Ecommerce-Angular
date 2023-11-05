@@ -22,5 +22,37 @@
         "price": 450,
         "creator": "PQR Jewelers",
         "description": "Classic gold bracelet perfect for everyday wear."
-    }
+    },
+    {
+    "id": 4,
+    "name": "Diamond Ring",
+    "type": "Ring",
+    "price": 1000,
+    "creator": "ACD Jewelers",
+    "description": "Beautiful diamond Ring with 6 cara perfect for a proposal>"   
+ },
+ {
+     "id": 5,
+     "name": "Gold ring with diamond",
+     "type": "Ring",
+     "price": 500,
+     "creator": "PQR Jewelers",
+     "description": "Classic gold ring with diamond to be extra shiny."
+ },
+ {
+     "id": 6,
+     "name": "Gold Bracelet",
+     "type": "Bracelet",
+     "price": 400,
+     "creator": "PQR Jewelers",
+     "description": "Classic gold bracelet. "
+ },
+ {
+     "id": 7,
+     "name": "Gold earrings",
+     "type": "Earrings",
+     "price": 200,
+     "creator": "PQR Jewelers",
+     "description": "Classic gold earrings. "
+ }
 ]
