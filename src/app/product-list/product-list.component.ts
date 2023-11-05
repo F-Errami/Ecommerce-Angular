@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { Jewelry } from '../models/jewelry';
+import { MatDialog } from '@angular/material/dialog';
+import { JewelryDialogComponent } from '../jewelry-dialog/jewelry-dialog.component';
 
 @Component({
   selector: 'app-product-list',
@@ -14,7 +16,8 @@ export class ProductListComponent implements OnInit {
   displayLimit: number = 3;
   showAll: boolean = false;
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService ,public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
     this.productService.getAllProducts().subscribe(jewelries => {
@@ -26,5 +29,11 @@ export class ProductListComponent implements OnInit {
   seeMore(): void {
     this.showAll = true; // Update flag to display all products
     this.displayedProducts = this.products; // Show all products
+  }
+  openDialog(jewelry: Jewelry): void {
+    const dialogRef = this.dialog.open(JewelryDialogComponent, {
+      width: '400px',
+      data: jewelry
+    });
   }
 }

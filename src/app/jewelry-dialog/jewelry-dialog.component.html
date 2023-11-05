@@ -1,0 +1,24 @@
+
+<div class="product-card">
+ 
+  <div class="product-tumb">
+    <img [src]="'assets/images/i-' + data.id + '.png'" alt="">
+  </div>
+  <div class="product-details">
+    <span class="product-catagory">{{ data.type }}</span>
+    <h4><a href="">{{ data.name }}</a></h4>
+    <p> {{ data.description }}</p>
+    <span class="product-catagory"> Designed by : {{ data.creator }}</span>
+    <div class="product-bottom-details">
+      <div class="product-price">${{ data.price }}</div>
+      <div class="product-links">
+        <a href=""><i class="fa fa-heart"></i></a>
+        <a href=""><i class="fa fa-shopping-cart"></i></a>
+      </div>
+      
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <button mat-raised-button color="primary" (click)="closeDialog()">OK</button>
+  </div>
+</div>

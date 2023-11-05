@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { JewelryDialogComponent } from '../jewelry-dialog/jewelry-dialog.component';
 import { ProductListComponent } from './product-list.component';
 
 describe('ProductListComponent', () => {

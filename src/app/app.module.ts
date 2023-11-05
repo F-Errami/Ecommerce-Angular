@@ -10,6 +10,10 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { JewelryDialogComponent } from './jewelry-dialog/jewelry-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { HttpClientModule } from '@angular/common/http';
     UserListComponent,
     OrderListComponent,
     ContactFormComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    JewelryDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    MatDialogModule,
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

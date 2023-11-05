@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "username": "JohnDoe",
+      "country": "United States",
+      "birthdate": "1990-05-15",
+      "email": "john@example.com",
+      "phone": "+1234567890"
+    },
+    {
+      "id": 2,
+      "username": "AliceSmith",
+      "country": "Canada",
+      "birthdate": "1985-11-30",
+      "email": "alice@example.com",
+      "phone": "+1987654321"
+    },
+    {
+      "id": 3,
+      "username": "MaxWilliams",
+      "country": "United Kingdom",
+      "birthdate": "1995-08-22",
+      "email": "maxw@email.com",
+      "phone": "+447700900077"
+    },
+    {
+      "id": 4,
+      "username": "EmilyJohnson",
+      "country": "Australia",
+      "birthdate": "1992-04-18",
+      "email": "emily@example.com",
+      "phone": "+610123456789"
+    },
+    {
+      "id": 5,
+      "username": "ChrisBrown",
+      "country": "Germany",
+      "birthdate": "1988-09-05",
+      "email": "chris@example.com",
+      "phone": "+490987654321"
+    },
+    {
+      "id": 6,
+      "username": "SophieAdams",
+      "country": "France",
+      "birthdate": "1996-07-12",
+      "email": "sophie@example.com",
+      "phone": "+33611223344"
+    },
+    {
+      "id": 7,
+      "username": "DavidWilson",
+      "country": "Spain",
+      "birthdate": "1983-02-28",
+      "email": "david@example.com",
+      "phone": "+34666778899"
+    }
+  ]
+  
