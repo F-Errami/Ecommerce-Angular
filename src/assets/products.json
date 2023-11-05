@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Diamond Necklace",
+        "type": "Necklace",
+        "price": 500,
+        "creator": "XYZ Jewelers",
+        "description": "Elegant diamond-studded necklace suitable for special occasions."
+    },
+    {
+        "id": 2,
+        "name": "Sapphire Earrings",
+        "type": "Earrings",
+        "price": 300,
+        "creator": "ABC Jewelers",
+        "description": "Beautiful sapphire earrings with a silver finish."
+    },
+    {
+        "id": 3,
+        "name": "Gold Bracelet",
+        "type": "Bracelet",
+        "price": 450,
+        "creator": "PQR Jewelers",
+        "description": "Classic gold bracelet perfect for everyday wear."
+    }
+]
