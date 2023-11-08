@@ -3,6 +3,7 @@ import { UserService } from '../services/user.service';
 import { User } from '../models/user';
 import { MatDialog } from '@angular/material/dialog';
 import { JewelryDialogComponent } from '../jewelry-dialog/jewelry-dialog.component';
+import { UserDialogComponent } from '../user-dialog/user-dialog.component';
 
 @Component({
   selector: 'app-user-list',
@@ -19,9 +20,9 @@ export class UserListComponent implements OnInit {
   displayLimit: number = 7;
   showAll: boolean = false;
 
-  constructor(private userService: UserService 
+  constructor(private userService: UserService ,public dialog: MatDialog
   ) { }
-
+  
   ngOnInit(): void {
     this.userService.getAllUsers().subscribe(users => {
       this.users = users;
@@ -33,5 +34,10 @@ export class UserListComponent implements OnInit {
     this.showAll = true; // Update flag to display all products
     this.displayedUsers = this.users; // Show all products
   }
-
+  openDialog(user: User): void {
+    const dialogRef = this.dialog.open(UserDialogComponent, {
+      width: '400px',
+      data: user
+    });
+  }
 }

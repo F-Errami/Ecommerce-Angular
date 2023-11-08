@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { JewelryDialogComponent } from './jewelry-dialog/jewelry-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { UserDialogComponent } from './user-dialog/user-dialog.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     ContactFormComponent,
     FooterComponent,
     HomeComponent,
-    JewelryDialogComponent
+    JewelryDialogComponent,
+    UserDialogComponent
   ],
   imports: [
     BrowserModule,
