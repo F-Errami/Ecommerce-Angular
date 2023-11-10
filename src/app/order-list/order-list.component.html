@@ -1,1 +1,48 @@
-<p>order-list works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-3 mb-lg-5">
+            <div class="position-relative card table-nowrap table-card">
+                <div class="card-header align-items-center">
+                    <h5 class="mb-0">Latest Transactions</h5>
+                    <p class="mb-0 small text-muted">1 Pending</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead class="small text-uppercase bg-body text-muted">
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Username</th>
+                                <th>Price</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle" *ngFor="let order of orders" (click)="openOrderDialog(order)">
+                                <td>
+                                    #{{ order.order_number }}
+                                </td>
+                                <td>{{ order.order_date }}</td>
+                                <td>{{ order.user.username }}</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                    
+                                        <span>${{ order.total_price }}</span>
+                                    </div>
+                                </td>
+                            
+                            </tr>
+                            <tr class="align-middle">
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer text-end">
+                    <a href="#!" class="btn btn-gray">View All Transactions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

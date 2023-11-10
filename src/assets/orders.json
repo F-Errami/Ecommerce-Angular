@@ -1,0 +1,145 @@
+[
+    {
+      "order_number": "ORD001",
+      "user": {
+        "id": 1,
+        "username": "JohnDoe",
+        "country": "United States",
+        "birthdate": "1990-05-15",
+        "email": "john@example.com",
+        "phone": "+1234567890"
+      },
+      "products": [
+        {
+          "product_id": 1,
+          "quantity": 2
+        },
+        {
+          "product_id": 3,
+          "quantity": 1
+        }
+      ],
+      "total_price": 1450,
+      "tracking_number": "TRK12345",
+      "order_date": "2023-11-05",
+      "delivery_address": "123 Main St, Anytown, USA"
+    },
+    {
+      "order_number": "ORD002",
+      "user": {
+        "id": 2,
+        "username": "AliceSmith",
+        "country": "Canada",
+        "birthdate": "1985-11-30",
+        "email": "alice@example.com",
+        "phone": "+1987654321"
+      },
+      "products": [
+        {
+          "product_id": 2,
+          "quantity": 1
+        },
+        {
+          "product_id": 5,
+          "quantity": 3
+        }
+      ],
+      "total_price": 2100,
+      "tracking_number": "TRK67890",
+      "order_date": "2023-11-04",
+      "delivery_address": "456 Elm St, Othertown, Canada"
+    },
+    {
+      "order_number": "ORD003",
+      "user": {
+        "id": 3,
+        "username": "MaxWilliams",
+        "country": "United Kingdom",
+        "birthdate": "1995-08-22",
+        "email": "maxw@email.com",
+        "phone": "+447700900077"
+      },
+      "products": [
+        {
+          "product_id": 4,
+          "quantity": 1
+        },
+        {
+          "product_id": 6,
+          "quantity": 2
+        }
+      ],
+      "total_price": 1852,
+      "tracking_number": "TRK24680",
+      "order_date": "2023-11-03",
+      "delivery_address": "789 Oak St, Anotherplace, UK"
+    },
+    {
+      "order_number": "ORD004",
+      "user": {
+        "id": 4,
+        "username": "EmilyJohnson",
+        "country": "Australia",
+        "birthdate": "1992-04-18",
+        "email": "emily@example.com",
+        "phone": "+610123456789"
+      },
+      "products": [
+        {
+          "product_id": 2,
+          "quantity": 1
+        },
+        {
+          "product_id": 7,
+          "quantity": 2
+        }
+      ],
+      "total_price": 900,
+      "tracking_number": "TRK34567",
+      "order_date": "2023-11-02",
+      "delivery_address": "567 Pine St, Someplace, Australia"
+    },
+    {
+      "order_number": "ORD005",
+      "user": {
+        "id": 5,
+        "username": "ChrisBrown",
+        "country": "Germany",
+        "birthdate": "1988-09-05",
+        "email": "chris@example.com",
+        "phone": "+490987654321"
+      },
+      "products": [
+        {
+          "product_id": 3,
+          "quantity": 3
+        }
+      ],
+      "total_price": 1350,
+      "tracking_number": "TRK98765",
+      "order_date": "2023-11-01",
+      "delivery_address": "890 Maple St, Anotherplace, Germany"
+    },
+    {
+      "order_number": "ORD006",
+      "user": {
+        "id": 6,
+        "username": "SophieAdams",
+        "country": "France",
+        "birthdate": "1996-07-12",
+        "email": "sophie@example.com",
+        "phone": "+33611223344"
+      },
+      "products": [
+        {
+          "product_id": 5,
+          "quantity": 1
+        }
+      ],
+      "total_price": 500,
+      "tracking_number": "TRK54321",
+      "order_date": "2023-10-31",
+      "delivery_address": "654 Oak St, Someplace, France"
+    
+}
+]

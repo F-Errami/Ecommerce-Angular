@@ -15,6 +15,7 @@ import { JewelryDialogComponent } from './jewelry-dialog/jewelry-dialog.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UserDialogComponent } from './user-dialog/user-dialog.component';
+import { OrderDialogComponent } from './order-dialog/order-dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserDialogComponent } from './user-dialog/user-dialog.component';
     FooterComponent,
     HomeComponent,
     JewelryDialogComponent,
-    UserDialogComponent
+    UserDialogComponent,
+    OrderDialogComponent
   ],
   imports: [
     BrowserModule,

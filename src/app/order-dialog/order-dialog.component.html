@@ -1,0 +1,61 @@
+
+
+  <div class="card card-1">
+      <div class="card-header bg-white">
+          <div class="media flex-sm-row flex-column-reverse justify-content-between  ">
+              <div class="col my-auto"> <h4 class="mb-0">Order mqde by<span class="change-color"> {{order.user.username}}</span> !</h4> </div>
+              <div class="col-auto text-center  my-auto pl-0 pt-sm-4"> <img class="img-fluid my-auto align-items-center mb-0 pt-3"  src="assets/images/logo.png" width="30" height="30"> <p class="mb-4 pt-0 Glasses"></p>  </div>
+          </div>
+      </div>
+      <div class="card-body">
+          <div class="row justify-content-between mb-3">
+              <div class="col-auto"> <h6 class="color-1 mb-0 change-color">Order Details</h6> </div>
+              <div class="col-auto  "> <small>Order number :  #{{ order.order_number }}</small> </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <div class="card card-2">
+                      <div class="card-body">
+                          <div class="media" *ngFor="let product of products">
+                              <div class="sq align-self-center "> <img class="img-fluid  my-auto align-self-center mr-2 mr-md-4 pl-0 p-0 m-0" [src]="'assets/images/i-' + product.id + '.png'" width="90" height="90" /> </div>
+                              <div class="media-body my-auto text-right">
+                                  <div class="row  my-auto flex-column flex-md-row">
+                                      <div class="col my-auto"> <h6 class="mb-0"> {{ product.name }}</h6>  </div>
+                                   
+                                      <div class="col my-auto"> <small>{{ product.type }}</small></div>
+                                      <div class="col my-auto"> <small>{{ getQuantity(product.id) }}</small></div>
+                                      <div class="col my-auto"><h6 class="mb-0">${{ product.price*getQuantity(product.id) }}</h6>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+                     
+            <hr> 
+      </div>
+
+      <div class="row mt-4">
+       
+    </div>
+    <div class="row invoice ">
+        <div class="col"><p class="mb-1"> Tracking number : {{ order.tracking_number }}</p><p class="mb-1">order date : {{ order.order_date }}</p><p class="mb-1">Delivery address : {{ order.delivery_address }}</p></div>
+    </div>
+      <div class="card-footer">
+          <div class="jumbotron-fluid">
+              <div class="row justify-content-between ">
+                  <div class="col-sm-auto col-auto my-auto"><img class="img-fluid my-auto align-self-center " src="assets/images/logo.png" width="50" height="50"></div>
+                  <div class="col-auto my-auto "><h2 class="mb-0 font-weight-bold">TOTAL PAID</h2></div>
+                  <div class="col-auto my-auto ml-auto"><h1 class="display-3 ">
+                    ${{ order.total_price }}</h1></div>
+              </div>
+            
+          </div>
+      </div>
+  </div>
+
+
+
