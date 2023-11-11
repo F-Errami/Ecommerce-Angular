@@ -188,6 +188,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    /* background-image: url(/assets/images/hero-bg.png);
+    background-size: cover;  */
+    
+
   }
   
   .slider_section .row {
@@ -1033,3 +1037,6 @@ body {
 }/*# sourceMappingURL=style.css.map */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.jwel{
+  color: #f8bf46;
+}
